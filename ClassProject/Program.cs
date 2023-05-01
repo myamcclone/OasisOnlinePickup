@@ -1,5 +1,4 @@
 ﻿using ClassProject.Model;
-using System.Data;
 
 namespace ClassProject
 {
@@ -10,6 +9,7 @@ namespace ClassProject
         private static List<CutomerAppointment> customerAppointments;
         private static Customer authenticatedCustomer;
 
+        private static Customer customer;
         static void Main(string[] args)
         {
             Console.WriteLine("Initializing...");
