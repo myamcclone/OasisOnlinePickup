@@ -13,7 +13,7 @@ namespace ClassProject
         static void Main(string[] args)
         {
             Console.WriteLine("Initializing...");
-            Initialize();
+            Initialize(); // Create and initialize all objects
             Menu();
         }
 
