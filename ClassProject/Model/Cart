@@ -1,0 +1,56 @@
+ // Represents a shopping cart that stores ordered items
+    public class Cart
+    {
+        public List<Item> OrderedItems { get; set; } // List to hold items in the cart
+
+        // Constructor to create an empty cart
+        public Cart()
+        {
+            OrderedItems = new List<Item>(); // Initializing the list of ordered items
+        }
+
+        // Method to add items to the cart
+        public void AddToCart(Item item)
+        {
+            OrderedItems.Add(item); // Adding the provided item to the cart
+        }
+
+        // Method to display items in the cart
+        public void DisplayCart()
+        {
+            Console.WriteLine("Items in Cart:");
+            foreach (var item in OrderedItems)
+            {
+                Console.WriteLine($"Item: {item.ItemName}, Price: {item.Price}"); // Displaying item name and price
+            }
+        }
+    }
+
+    // Main program entry point
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Creating an inventory and adding items to it
+            Inventory inventory = new Inventory();
+            inventory.AddItem("Product 1", 10.0);
+            inventory.AddItem("Product 2", 20.0);
+
+            // Creating a cart and adding items from the inventory to it
+            Cart cart = new Cart();
+            cart.AddToCart(inventory.Items[0]); // Adding Product 1 to the cart
+            cart.AddToCart(inventory.Items[1]); // Adding Product 2 to the cart
+
+            // Displaying items in the cart
+            cart.DisplayCart();
+        }
+    }
+}
+These comments provide explanations for each class, their properties, methods, and the main program logic to add items to the inventory, move items to the cart, and display the contents of the cart.
+
+
+
+
+
+
+
