@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+public class Inventory
+{
+    public List<Item> Item { get; set; }
+
+    public Inventory()
+    {
+        Items = new List<Item>();
+    }
+
+    // Method to add items to the inventory
+    public void AddItem(string itemName, double price)
+    {
+        Items.Add(new Item(itemName, price));
+    }
+}

@@ -1,0 +1,18 @@
+// Represents an inventory of items
+    public class Inventory
+    {
+        public List<Item> Items { get; set; } // List to hold items in the inventory
+
+        // Constructor to create an empty inventory
+        public Inventory()
+        {
+            Items = new List<Item>(); // Initializing the list of items
+        }
+
+        // Method to add items to the inventory
+        public void AddItem(string itemName, double price)
+        {
+            Items.Add(new Item(itemName, price)); // Creating a new item and adding it to the inventory
+        }
+    }
+
