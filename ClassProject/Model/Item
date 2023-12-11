@@ -1,0 +1,13 @@
+// Represents an individual item with its name and price
+    public class Item
+    {
+        public string ItemName { get; set; } // Property to store the name of the item
+        public double Price { get; set; }    // Property to store the price of the item
+
+        // Constructor to initialize an Item with its name and price
+        public Item(string itemName, double price)
+        {
+            ItemName = itemName;
+            Price = price;
+        }
+    }
